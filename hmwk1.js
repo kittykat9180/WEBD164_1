@@ -1,10 +1,10 @@
-let num1 = prompt("Please select your first number", "Enter number");
-let num2 = prompt("Please select your second number", "Enter number");
+let num1 = parseInt(prompt("Please select your first number", "Enter number"));
+let num2 = parseInt(prompt("Please select your second number", "Enter number"));
 
-let int1 = parseInt(num1);
-let int2 = parseInt(num2);
+// let int1 = parseInt(num1);
+// let int2 = parseInt(num2);
 
-if (int1 != null && int2 != null) {
+if (num1 != null && num2 != null) {
     document.getElementById("inputSum").innerHTML =
-    "You entered "+ int1 + " and " + int2 + "which equals " + (int1 + int2);
+    "You entered "+ num1 + " and " + num2 + " which equals " + (num1 + num2);
 }
